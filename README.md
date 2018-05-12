@@ -30,8 +30,8 @@ john@example.com and your local repository is ~/repos/my-project.
 1. create a file named `.vim-sync` in project root on local machine, with remote address as
    content
 
-   cd ~/repos/my-project
-   echo 'john@example.com:/opt/my-project' > .vim-sync
+     cd ~/repos/my-project
+     echo 'john@example.com:/opt/my-project' > .vim-sync
 
 2. Edit some files and save them.
 3. Use `:VSUploadFile` to upload current file to remote, use `:VSUpload` to
