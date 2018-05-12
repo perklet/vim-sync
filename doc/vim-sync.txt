@@ -1,0 +1,27 @@
+*vim-sync.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                             *vim-sync*
+
+    1. Intro ................................................. |vim-sync-intro|
+    2. Requirements ................................... |vim-sync-requirements|
+    3. Usage ................................................. |vim-sync-usage|
+    4. Licence ............................................. |vim-sync-licence|
+===============================================================================
+1. Intro                                                       *vim-sync-intro*
+
+Overview of plugin
+
+2. Requirements                                         *vim-sync-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                                       *vim-sync-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                                   *vim-sync-licence*
+
+This is open source make sure to include a licence
+
+vim:ft=help
