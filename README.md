@@ -1,6 +1,6 @@
 # vim-sync
 
-sync with remote machine in vim
+Sync files with remote machine in vim
 
 ## Installation
 
@@ -21,17 +21,17 @@ Use your plugin manager of choice.
 ## Usage
 
 When you have a slow network, editing files on remote machine can be very
-annoying. With vim-sync, you can edit files on local machine and upload it right in vimr.
+annoying. With vim-sync, you can edit files on local machine and upload it right in vim.
 
 Vim-sync uses rsync to sync between your local project files with remote ones.
-Suppose you remote repository is /opt/my-project, remote machine is
+Suppose your remote repository is /opt/my-project, remote machine is
 john@example.com and your local repository is ~/repos/my-project.
 
 1. create a file named `.vim-sync` in project root on local machine, with remote address as
    content
 
-     cd ~/repos/my-project
-     echo 'john@example.com:/opt/my-project' > .vim-sync
+       % cd ~/repos/my-project
+       % echo 'john@example.com:/opt/my-project' > .vim-sync
 
 2. Edit some files and save them.
 3. Use `:VSUploadFile` to upload current file to remote, use `:VSUpload` to
