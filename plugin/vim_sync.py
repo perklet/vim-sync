@@ -4,7 +4,7 @@ import time
 from subprocess import check_output
 
 
-IGNORE_FILES = ['.git', '.venv', '__pycache__']
+IGNORE_FILES = ['.git', '.venv', '__pycache__', 'tags']
 
 
 def without_slash(dirname):
@@ -49,8 +49,8 @@ def find_sync_path(target):
 
 
 def rsync(src, dst, compress=True):
-    print("uploading...")
-    cmd = ['rsync', '-azW', src, dst]
+    print("syncing...")
+    cmd = ['rsync', '-azW', '--delete', src, dst]
     start = time.time()
     for ig in IGNORE_FILES:
         cmd.append('--exclude')
